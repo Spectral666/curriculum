@@ -2,16 +2,16 @@ nav{
     display: flex;
     flex-direction: column;
     // align-items: center;
+    background: #000;
     justify-content: left;
-    border-radius: 10px 0px 0px 10px;
     a{
-        background: #000;
-        width: 70px;
-        padding: 15px;
-        font-size: 44px;
+        width: 4vw;
+        padding: 1vw;
+        font-size: 2vw;
         text-decoration: none;
         color: aqua;
         z-index: 1;
+        transition: .5s;
         &:hover{
             .nav-text{
                 display: inline-block;
@@ -23,7 +23,12 @@ nav{
         .nav-text{
             font-size: 24px;
             display: none;
-            
+            margin-left: 20px;
         }
+        
+    }
+    .active{
+        background: aqua;
+        color: #000;
     }
 }

@@ -1,0 +1,63 @@
+.perfil{
+    width: 100%;
+    height: 800px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 2vw;
+    background: rgb(202, 202, 202);
+    h3{
+        font-size: 2vw;
+        font-weight: 400;
+        color: #fff;
+    }
+    h2{
+        font-size: 4vw;
+        letter-spacing: 1.5px;
+        margin-bottom: 1.5vw;
+    }
+    h4{
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+    .sobre-mi{
+        padding: 1vw;
+        border-radius: 8px;
+        margin-bottom: 2vw;
+        background: white;
+    }
+    .servicios{
+        padding: 1vw;
+        border-radius: 8px;
+        background: #000;
+        h4{
+            color: #fff;
+        }
+        .contenido{
+            width: 100%;
+            padding: 1vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .element{
+                padding: 2vw;
+                border-radius: 10px;
+                transition: .3s;
+                &:hover{
+                    box-shadow: 0px 4px 5px 7px rgba(181, 255, 251, 0.75);
+                    -webkit-box-shadow: 0px 4px 5px 7px rgba(181, 255, 251, 0.75);
+                    -moz-box-shadow: 0px 4px 5px 7px rgba(181, 255, 251, 0.75);
+                }
+                img{
+                    width: 25vw;
+                    padding: 2.5vw;
+                }
+                p{
+                    font-size: 1.2vw;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

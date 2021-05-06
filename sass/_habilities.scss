@@ -1,0 +1,182 @@
+.habilities{
+    width: 100%;
+    height: 800px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 2vw;
+    background: rgb(37, 37, 37);
+    h3{
+        text-align: center;
+        color: aqua;
+        font-size: 34px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 2vw;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-bottom: 2vw;
+        .card{
+            position: relative;
+            width: 380px;
+            margin: 15px 10px;
+            background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            border-radius: 5px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+            &:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+                .box{
+                    .percent{
+                        .number{
+                            h4{
+                                color: aqua;
+                                font-size: 50px;
+                            }
+                        }
+                    }
+                    .text{
+                        color: #fff;
+                    }
+                }
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -50%;
+                width: 100%;
+                height: 100%;
+                background: rgba( 255,255,255,0.15);
+                pointer-events: none;
+                z-index: 1;
+            }
+            &:nth-child(1){
+                .box{
+                    .percent{
+                        svg{
+                            circle{
+                                &:nth-child(2){
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 100);
+                                    stroke: rgb(255, 131, 49);
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            &:nth-child(2){
+                .box{
+                    .percent{
+                        svg{
+                            circle{
+                                &:nth-child(2){
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 100);
+                                    stroke: #3db1ff;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            &:nth-child(3){
+                .box{
+                    .percent{
+                        svg{
+                            circle{
+                                &:nth-child(2){
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 80);
+                                    stroke: rgb(255, 225, 52);
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            &:nth-child(4){
+                .box{
+                    .percent{
+                        svg{
+                            circle{
+                                &:nth-child(2){
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 85);
+                                    stroke: rgb(52, 241, 255);
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            .box{
+                .percent{
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    box-shadow: inset 0 0 50px #000;
+                    background: #222;
+                    z-index: 1000;
+                    svg{
+                        position: relative;
+                        width: 150px;
+                        height: 150px;
+                        z-index: 100;
+                        circle{
+                            width: 100%;
+                            height: 100%;
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 10;
+                            stroke-linecap: round;
+                            transform: translate(5px,5px);
+                            &:nth-child(2){
+                                stroke-dasharray: 440;
+                                stroke-dashoffset: 440;
+                            }
+                        }
+                    }
+                    .number{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        h4{
+                            color: #777;
+                            font-weight: 700;
+                            font-size: 40px;
+                            transition: 0.5s;
+                            span{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+                .text{
+                    position: relative;
+                    color: #777;
+                    margin-top: 20px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

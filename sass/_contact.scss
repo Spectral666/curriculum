@@ -1,0 +1,44 @@
+.contact{
+    width: 100%;
+    height: 800px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 2vw;
+    background: rgb(37, 37, 37);
+    h2{
+        color: aqua;
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    .gmail{
+        a{
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            &:nth-child(1){
+                &::before{
+                    content: '\f0e0';
+                    color: red;
+                    border-bottom: 4px solid red;
+                }
+            }
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 6vw;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s ease-in-out;
+            }
+            &:hover{
+                &::before{
+                    height: 100%;
+                }
+            }
+            .far{
+                font-size: 6vw;   
+            }
+        }
+    }
+}

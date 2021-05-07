@@ -68,7 +68,7 @@
                             circle{
                                 &:nth-child(2){
                                     stroke-dashoffset: calc(440 - (440 * 100) / 100);
-                                    stroke: rgb(255, 131, 49);
+                                    stroke: rgb(52, 241, 255);
                                 }
                             }
                         }
@@ -82,7 +82,7 @@
                             circle{
                                 &:nth-child(2){
                                     stroke-dashoffset: calc(440 - (440 * 100) / 100);
-                                    stroke: #3db1ff;
+                                    stroke: rgb(52, 241, 255);
                                 }
                             }
                         }
@@ -96,7 +96,7 @@
                             circle{
                                 &:nth-child(2){
                                     stroke-dashoffset: calc(440 - (440 * 100) / 80);
-                                    stroke: rgb(255, 225, 52);
+                                    stroke: rgb(52, 241, 255);
                                 }
                             }
                         }
@@ -109,8 +109,36 @@
                         svg{
                             circle{
                                 &:nth-child(2){
-                                    stroke-dashoffset: calc(440 - (440 * 100) / 85);
-                                    stroke: rgb(52, 241, 255);
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 95);
+                                    stroke: rgb(255, 131, 49);
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            &:nth-child(5){
+                .box{
+                    .percent{
+                        svg{
+                            circle{
+                                &:nth-child(2){
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 82);
+                                    stroke: #3db1ff;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            &:nth-child(6){
+                .box{
+                    .percent{
+                        svg{
+                            circle{
+                                &:nth-child(2){
+                                    stroke-dashoffset: calc(440 - (440 * 100) / 28);
+                                    stroke: rgb(255, 225, 52);
                                 }
                             }
                         }

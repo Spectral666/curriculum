@@ -21,7 +21,7 @@ nav{
             width: 200px;
         }
         .nav-text{
-            font-size: 24px;
+            font-size: 20px;
             display: none;
             margin-left: 20px;
         }
@@ -30,5 +30,19 @@ nav{
     .active{
         background: aqua;
         color: #000;
+    }
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        position: sticky;
+        z-index: 2000;
+        top: 0;
+        flex-direction: row;
+        a{
+            width: 20vw;
+            text-align: center;
+            
+        }
     }
 }

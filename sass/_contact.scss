@@ -77,5 +77,11 @@
 @media screen and (max-width: 800px){
     .contact{
         height: auto;
+        h2{
+            font-size: 6vw;
+        }
+        p{
+            font-size: 3vw;
+        }
     }
 }

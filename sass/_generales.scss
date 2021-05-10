@@ -17,7 +17,7 @@
     padding: 2.5vw 4vw;
     select{
         position: absolute;
-        font-size: 14px;
+        font-size: 1vw;
         border-radius: 5px;
         right: 4vw;
     }
@@ -82,6 +82,11 @@
     .contenedor{
         padding: 0;
         height: auto;
+        select{
+            top: 6.5vw;
+            font-size: 2vw;
+            right: 15vw;
+        }
         .content{
             flex-direction: column;
             .logo{
